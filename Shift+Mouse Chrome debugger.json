@@ -1,0 +1,89 @@
+{
+  "title": "Shift+Mouse Javascript debugger",
+  "rules": [
+    {
+      "description": "Change Mouse down to Step Over",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "pointing_button": "button4",
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f10"
+            },
+            {
+              "key_code": "grave_accent_and_tilde",
+              "modifiers":
+              [
+                "command" 
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Change Mouse up to Step Into",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "pointing_button": "button5",
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f11"
+            },
+            {
+              "key_code": "semicolon",
+              "modifiers":
+              [
+                "command" 
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Change Mouse center to Resume",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "pointing_button": "button3",
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f8"
+            },
+            {
+              "key_code": "backslash",
+              "modifiers":
+              [
+                "command" 
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
